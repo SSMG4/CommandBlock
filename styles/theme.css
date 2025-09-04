@@ -1,0 +1,90 @@
+:root {
+  --color-bg: #fff;
+  --color-text: #222;
+  --color-header: #efefef;
+  --color-nav: #eee;
+  --color-accent: #f9a825;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+}
+
+header {
+  background: var(--color-header);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5em 1em;
+  border-bottom: 2px solid var(--color-accent);
+}
+
+.logo-container {
+  margin-right: 1em;
+}
+
+nav {
+  display: flex;
+  gap: 0.7em;
+}
+
+nav a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: var(--color-accent);
+}
+
+.header-controls {
+  display: flex;
+  gap: 0.5em;
+}
+
+main {
+  padding: 2em;
+}
+
+footer {
+  background: var(--color-header);
+  text-align: center;
+  padding: 0.5em;
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* Themes */
+body.theme-light {
+  --color-bg: #fff;
+  --color-text: #222;
+  --color-header: #efefef;
+  --color-nav: #eee;
+  --color-accent: #f9a825;
+}
+body.theme-dark {
+  --color-bg: #181818;
+  --color-text: #fafafa;
+  --color-header: #232323;
+  --color-nav: #333;
+  --color-accent: #f9a825;
+}
+body.theme-grey {
+  --color-bg: #c9c9c9;
+  --color-text: #222;
+  --color-header: #e0e0e0;
+  --color-nav: #ddd;
+  --color-accent: #f9a825;
+}
+body.theme-amoled {
+  --color-bg: #000;
+  --color-text: #fafafa;
+  --color-header: #181818;
+  --color-nav: #101010;
+  --color-accent: #f9a825;
+}
