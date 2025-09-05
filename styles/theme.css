@@ -88,3 +88,47 @@ body.theme-amoled {
   --color-nav: #101010;
   --color-accent: #f9a825;
 }
+
+/* Container for dropdown */
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+/* Dropdown button style */
+.dropbtn {
+  background-color: #333;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Dropdown links style */
+.dropdown-content a {
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change button color on hover */
+.dropdown:hover .dropbtn {
+  background-color: #555;
+}
