@@ -3,14 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <title>Wiki - CommandBlock</title>
-  <meta http-equiv="refresh" content="0; url=https://minecraft.wiki/">
+  <meta http-equiv="refresh" content="3; url=https://minecraft.wiki/">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/theme.css">
 </head>
 <body>
-  <main>
-    <h2>Redirecting to Minecraft Wiki...</h2>
-    <p>If you are not redirected automatically, <a href="https://minecraft.wiki/">click here</a>.</p>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="header-left">
+      <div class="logo-container">
+        <img id="logo" src="assets/base.png" alt="Command Block Logo" width="48" height="48">
+      </div>
+      <h1 class="site-title" data-i18n="hero_title">CommandBlock</h1>
+    </div>
+
+    <nav class="header-nav">
+      <a href="https://ssmg4.github.io/CommandBlock" data-i18n="nav_home">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn" aria-expanded="false">
+          <span data-i18n="nav_more">More</span>
+          <span class="arrow-icon" aria-hidden="true"></span>
+        </button>
+        <div class="dropdown-content">
+          <a href="logo-history.html" data-i18n="nav_logo">Logo History</a>
+          <a href="java-history.html" data-i18n="nav_java">Java Versions</a>
+          <a href="bedrock-history.html" data-i18n="nav_bedrock">Bedrock Versions</a>
+          <a href="editions.html" data-i18n="nav_editions">Editions</a>
+          <a href="unofficial.html" data-i18n="nav_unofficial">Unofficial</a>
+          <a href="other.html" data-i18n="nav_other">Other</a>
+          <a href="modding.html" data-i18n="nav_modding">Modding</a>
+          <a href="mods.html" data-i18n="nav_mods">Mods</a>
+        </div>
+      </div>
+      <a href="about.html" data-i18n="nav_about">About</a>
+      <a href="wiki.html" data-i18n="nav_wiki">Wiki</a>
+    </nav>
+
+    <div class="header-controls">
+      <select id="theme-switcher" aria-label="Theme">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+        <option value="grey">Grey</option>
+        <option value="amoled">AMOLED</option>
+      </select>
+      <select id="lang-switcher" aria-label="Language">
+        <option value="en">EN</option>
+        <option value="fr">FR</option>
+        <option value="jp">JP</option>
+        <option value="ru">RU</option>
+        <option value="es">ES</option>
+      </select>
+    </div>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main style="text-align: center; padding-top: 4em;">
+    <h2 data-i18n="wiki_redirect">Redirecting to Minecraft Wiki...</h2>
+    <p><span data-i18n="wiki_click">If you are not redirected automatically,</span> <a href="https://minecraft.wiki/">click here</a>.</p>
   </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; <span data-i18n="footer_copy">2026 CommandBlock | Unofficial Fan Project</span></p>
+    <p data-i18n="footer_disclaimer">This project is not affiliated with Mojang Studios or Microsoft.</p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
 </body>
 </html>
