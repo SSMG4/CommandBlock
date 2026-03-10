@@ -7,34 +7,38 @@
   <link rel="stylesheet" href="styles/theme.css">
 </head>
 <body>
+
+  <!-- ===== HEADER ===== -->
   <header>
     <div class="header-left">
       <div class="logo-container">
         <img id="logo" src="assets/base.png" alt="Command Block Logo" width="48" height="48">
       </div>
-      <h1 class="site-title">CommandBlock</h1>
+      <h1 class="site-title" data-i18n="hero_title">CommandBlock</h1>
     </div>
+
     <nav class="header-nav">
-      <a href="https://ssmg4.github.io/CommandBlock">Home</a>
+      <a href="https://ssmg4.github.io/CommandBlock" data-i18n="nav_home">Home</a>
       <div class="dropdown">
         <button class="dropbtn" aria-expanded="false">
-          More
-          <span class="arrow"></span>
+          <span data-i18n="nav_more">More</span>
+          <span class="arrow-icon" aria-hidden="true"></span>
         </button>
         <div class="dropdown-content">
-          <a href="logo-history.html">Logo History</a>
-          <a href="java-history.html">Java Versions</a>
-          <a href="bedrock-history.html">Bedrock Versions</a>
-          <a href="editions.html">Editions</a>
-          <a href="unofficial.html">Unofficial</a>
-          <a href="other.html">Other</a>
-          <a href="modding.html">Modding</a>
-          <a href="mods.html">Mods</a>
+          <a href="logo-history.html" data-i18n="nav_logo">Logo History</a>
+          <a href="java-history.html" data-i18n="nav_java">Java Versions</a>
+          <a href="bedrock-history.html" data-i18n="nav_bedrock">Bedrock Versions</a>
+          <a href="editions.html" data-i18n="nav_editions">Editions</a>
+          <a href="unofficial.html" data-i18n="nav_unofficial">Unofficial</a>
+          <a href="other.html" data-i18n="nav_other">Other</a>
+          <a href="modding.html" data-i18n="nav_modding">Modding</a>
+          <a href="mods.html" data-i18n="nav_mods">Mods</a>
         </div>
       </div>
-      <a href="about.html">About</a>
-      <a href="wiki.html">Wiki</a>
+      <a href="about.html" data-i18n="nav_about">About</a>
+      <a href="wiki.html" data-i18n="nav_wiki">Wiki</a>
     </nav>
+
     <div class="header-controls">
       <select id="theme-switcher" aria-label="Theme">
         <option value="light">Light</option>
@@ -52,68 +56,65 @@
     </div>
   </header>
 
+  <!-- ===== MAIN ===== -->
   <main>
     <section>
-      <h2>About CommandBlock</h2>
-      <p>
-        <strong>CommandBlock</strong> is a fan-created, all-in-one library about Minecraft,<br>
-        covering everything from version histories to modding and community projects.<br>
-        This site is for fans, by fans—no affiliation with Mojang or Microsoft.
+      <h2 data-i18n="about_heading">About CommandBlock</h2>
+      <p data-i18n="about_p">
+        CommandBlock is a fan-created, all-in-one library about Minecraft,
+        covering everything from version histories to modding and community projects.
+        This site is for fans, by fans, with no affiliation with Mojang or Microsoft.
       </p>
     </section>
 
     <section>
-      <h3>About the Creator</h3>
+      <h3 data-i18n="about_creator_h">About the Creator</h3>
       <p>
-        Made by <a href="https://github.com/SSMG4">SSMG4</a><br>
-        Minecraft enthusiast, history archivist, and web developer.<br>
-        <em>Contact:</em> <a href="mailto:ssmg4@proton.me">ssmg4@proton.me</a>
+        <span data-i18n="about_creator_p">Made by <a href="https://github.com/SSMG4">SSMG4</a>. Minecraft enthusiast, history archivist, and web developer.</span><br>
+        <em><span data-i18n="about_contact">Contact</span>:</em> <a href="mailto:ssmg4@proton.me">ssmg4@proton.me</a>
       </p>
     </section>
 
     <section>
-      <h3>About the Project</h3>
+      <h3 data-i18n="about_project_h">About the Project</h3>
       <ul>
-        <li>Started: 2025</li>
-        <li>Goal: To be the most comprehensive info source for all things Minecraft</li>
-        <li>Tech Stack: HTML, CSS, JS/WebASM</li>
-        <li>Open source! <a href="https://github.com/SSMG4/CommandBlock">GitHub Repository</a></li>
-        <li>See <a href="mods.html">Mods</a>, <a href="modding.html">Modding</a>, <a href="logo-history.html">Logo History</a>, and more!</li>
+        <li data-i18n="about_started">Started: 2025</li>
+        <li data-i18n="about_goal">Goal: To be the most comprehensive info source for all things Minecraft</li>
+        <li data-i18n="about_tech">Tech Stack: HTML, CSS, JavaScript</li>
+        <li><span data-i18n="about_opensource">Open source!</span> <a href="https://github.com/SSMG4/CommandBlock">GitHub Repository</a></li>
+        <li>See <a href="mods.html" data-i18n="nav_mods">Mods</a>, <a href="modding.html" data-i18n="nav_modding">Modding</a>, <a href="logo-history.html" data-i18n="nav_logo">Logo History</a>, and more!</li>
       </ul>
     </section>
 
     <section>
-      <h3>About Minecraft</h3>
+      <h3 data-i18n="about_mc_h">About Minecraft</h3>
       <p>
-        Minecraft is a sandbox game created by Markus "Notch" Persson, developed by Mojang Studios, and now owned by Microsoft.<br>
-        Visit the official site: <a href="https://www.minecraft.net/">minecraft.net</a>
+        <span data-i18n="about_mc_p">Minecraft is a sandbox game created by Markus "Notch" Persson, developed by Mojang Studios, and now owned by Microsoft. Visit the official site:</span>
+        <a href="https://www.minecraft.net/">minecraft.net</a>
       </p>
     </section>
 
     <section>
-      <h3>About Mojang/Microsoft</h3>
-      <p>
-        Mojang Studios is the Swedish game studio behind Minecraft.<br>
-        Microsoft acquired Mojang and Minecraft in 2014.<br>
-        All trademarks and copyrights belong to their respective owners.
-      </p>
+      <h3 data-i18n="about_mojang_h">About Mojang/Microsoft</h3>
+      <p data-i18n="about_mojang_p1">Mojang Studios is the Swedish game studio behind Minecraft.</p>
+      <p data-i18n="about_mojang_p2">Microsoft acquired Mojang and Minecraft in 2014.</p>
+      <p data-i18n="about_mojang_p3">All trademarks and copyrights belong to their respective owners.</p>
     </section>
 
     <section>
-      <h3>Credits & Community</h3>
+      <h3 data-i18n="about_credits_h">Credits and Community</h3>
       <ul>
-        <li>Minecraft Wiki: <a href="https://minecraft.wiki/">minecraft.wiki</a></li>
+        <li><span data-i18n="about_credits_wiki">Minecraft Wiki</span>: <a href="https://minecraft.wiki/">minecraft.wiki</a></li>
         <li>Minecraft modding hosts: <a href="https://modrinth.com/">Modrinth</a>, <a href="https://www.curseforge.com/">CurseForge</a></li>
-        <li>Special thanks to the Minecraft community for decades of creativity!</li>
+        <li data-i18n="about_credits_thanks">Special thanks to the Minecraft community for decades of creativity!</li>
       </ul>
     </section>
   </main>
 
+  <!-- ===== FOOTER ===== -->
   <footer>
-    <p>
-      &copy; 2025 CommandBlock | Unofficial Minecraft Fan Project<br>
-      This project is not affiliated with Mojang Studios or Microsoft.
-    </p>
+    <p>&copy; <span data-i18n="footer_copy">2026 CommandBlock | Unofficial Fan Project</span></p>
+    <p data-i18n="footer_disclaimer">This project is not affiliated with Mojang Studios or Microsoft.</p>
   </footer>
 
   <script src="scripts/main.js"></script>
