@@ -7,34 +7,38 @@
   <link rel="stylesheet" href="styles/theme.css">
 </head>
 <body>
+
+  <!-- ===== HEADER ===== -->
   <header>
     <div class="header-left">
       <div class="logo-container">
         <img id="logo" src="assets/base.png" alt="Command Block Logo" width="48" height="48">
       </div>
-      <h1 class="site-title">CommandBlock</h1>
+      <h1 class="site-title" data-i18n="hero_title">CommandBlock</h1>
     </div>
+
     <nav class="header-nav">
-      <a href="https://ssmg4.github.io/CommandBlock">Home</a>
+      <a href="https://ssmg4.github.io/CommandBlock" data-i18n="nav_home">Home</a>
       <div class="dropdown">
         <button class="dropbtn" aria-expanded="false">
-          More
-          <span class="arrow"></span>
+          <span data-i18n="nav_more">More</span>
+          <span class="arrow-icon" aria-hidden="true"></span>
         </button>
         <div class="dropdown-content">
-          <a href="logo-history.html">Logo History</a>
-          <a href="java-history.html">Java Versions</a>
-          <a href="bedrock-history.html">Bedrock Versions</a>
-          <a href="editions.html">Editions</a>
-          <a href="unofficial.html">Unofficial</a>
-          <a href="other.html">Other</a>
-          <a href="modding.html">Modding</a>
-          <a href="mods.html">Mods</a>
+          <a href="logo-history.html" data-i18n="nav_logo">Logo History</a>
+          <a href="java-history.html" data-i18n="nav_java">Java Versions</a>
+          <a href="bedrock-history.html" data-i18n="nav_bedrock">Bedrock Versions</a>
+          <a href="editions.html" data-i18n="nav_editions">Editions</a>
+          <a href="unofficial.html" data-i18n="nav_unofficial">Unofficial</a>
+          <a href="other.html" data-i18n="nav_other">Other</a>
+          <a href="modding.html" data-i18n="nav_modding">Modding</a>
+          <a href="mods.html" data-i18n="nav_mods">Mods</a>
         </div>
       </div>
-      <a href="about.html">About</a>
-      <a href="wiki.html">Wiki</a>
+      <a href="about.html" data-i18n="nav_about">About</a>
+      <a href="wiki.html" data-i18n="nav_wiki">Wiki</a>
     </nav>
+
     <div class="header-controls">
       <select id="theme-switcher" aria-label="Theme">
         <option value="light">Light</option>
@@ -52,42 +56,103 @@
     </div>
   </header>
 
-  <main>
-    <section>
-      <h2>Welcome to CommandBlock!</h2>
-      <p>
-        The most complete Minecraft information library. Explore version histories, logo archives, modding guides, and more!
+  <!-- ===== MAIN ===== -->
+  <main style="padding: 0;">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-bg-grid"></div>
+      <img class="hero-logo" src="assets/base.png" alt="Command Block" id="hero-logo">
+      <h1 data-i18n="hero_title">CommandBlock</h1>
+      <p class="hero-subtitle" data-i18n="hero_subtitle">
+        The ultimate Minecraft information library. Version histories, logo archives, modding guides, and more.
       </p>
+      <a href="#features" class="hero-cta" data-i18n="hero_cta">Explore</a>
     </section>
-    <!-- Add feature highlights, latest updates, or intro content here -->
+
+    <!-- Feature Cards -->
+    <section class="features-section" id="features">
+      <h2 data-i18n="features_heading">Explore the Library</h2>
+      <div class="cards-grid">
+
+        <a href="logo-history.html" class="card">
+          <div class="card-icon">&#128444;&#65039;</div>
+          <div class="card-title" data-i18n="card_logo_title">Logo History</div>
+          <div class="card-desc" data-i18n="card_logo_desc">Every Minecraft logo, from Pre-Classic to today.</div>
+        </a>
+
+        <a href="java-history.html" class="card">
+          <div class="card-icon">&#9749;</div>
+          <div class="card-title" data-i18n="card_java_title">Java Versions</div>
+          <div class="card-desc" data-i18n="card_java_desc">Full changelog from Indev to the latest release.</div>
+        </a>
+
+        <a href="bedrock-history.html" class="card">
+          <div class="card-icon">&#129704;</div>
+          <div class="card-title" data-i18n="card_bedrock_title">Bedrock Versions</div>
+          <div class="card-desc" data-i18n="card_bedrock_desc">All Bedrock/PE updates, from 0.1 onward.</div>
+        </a>
+
+        <a href="editions.html" class="card">
+          <div class="card-icon">&#127918;</div>
+          <div class="card-title" data-i18n="card_editions_title">Editions</div>
+          <div class="card-desc" data-i18n="card_editions_desc">Legacy consoles, handhelds, every official client.</div>
+        </a>
+
+        <a href="unofficial.html" class="card">
+          <div class="card-icon">&#128123;</div>
+          <div class="card-title" data-i18n="card_unofficial_title">Unofficial</div>
+          <div class="card-desc" data-i18n="card_unofficial_desc">Fan projects, creepypastas, and community builds.</div>
+        </a>
+
+        <a href="other.html" class="card">
+          <div class="card-icon">&#128506;&#65039;</div>
+          <div class="card-title" data-i18n="card_other_title">Other Experiences</div>
+          <div class="card-desc" data-i18n="card_other_desc">Dungeons, Legends, Classic, and beyond.</div>
+        </a>
+
+        <a href="modding.html" class="card">
+          <div class="card-icon">&#128295;</div>
+          <div class="card-title" data-i18n="card_modding_title">Modding</div>
+          <div class="card-desc" data-i18n="card_modding_desc">Guides and resources for all things modded.</div>
+        </a>
+
+        <a href="mods.html" class="card">
+          <div class="card-icon">&#128230;</div>
+          <div class="card-title" data-i18n="card_mods_title">Mods and Hosts</div>
+          <div class="card-desc" data-i18n="card_mods_desc">Modrinth, CurseForge, and the best mods around.</div>
+        </a>
+
+      </div>
+    </section>
+
   </main>
 
+  <!-- ===== FOOTER ===== -->
   <footer>
-    <p>&copy; 2025 CommandBlock | Unofficial Fan Project</p>
+    <p>&copy; <span data-i18n="footer_copy">2026 CommandBlock | Unofficial Fan Project</span></p>
+    <p data-i18n="footer_disclaimer">This project is not affiliated with Mojang Studios or Microsoft.</p>
   </footer>
 
+  <script src="scripts/main.js"></script>
   <script>
-    // Dropdown arrow rotation logic
-    document.addEventListener("DOMContentLoaded", function() {
-      const dropbtn = document.querySelector('.dropbtn');
-      const dropdown = document.querySelector('.dropdown-content');
-      const arrow = document.querySelector('.arrow');
-      dropbtn.addEventListener('click', function(e) {
-        e.preventDefault();
-        dropdown.classList.toggle('show');
-        dropbtn.setAttribute('aria-expanded', dropdown.classList.contains('show'));
-        arrow.classList.toggle('open');
-      });
-      // Close dropdown when clicking outside
-      document.addEventListener('click', function(e) {
-        if (!dropbtn.contains(e.target) && !dropdown.contains(e.target)) {
-          dropdown.classList.remove('show');
-          arrow.classList.remove('open');
-          dropbtn.setAttribute('aria-expanded', 'false');
-        }
-      });
+    window.addEventListener('DOMContentLoaded', function() {
+      var cta = document.querySelector('.hero-cta');
+      if (cta) {
+        cta.addEventListener('click', function(e) {
+          var target = document.querySelector('#features');
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      }
+      setTimeout(function() {
+        var heroLogo = document.getElementById('hero-logo');
+        var mainLogo = document.getElementById('logo');
+        if (heroLogo && mainLogo) heroLogo.src = mainLogo.src;
+      }, 10);
     });
   </script>
-  <script src="scripts/main.js"></script>
 </body>
 </html>
