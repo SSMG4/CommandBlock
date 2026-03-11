@@ -17,12 +17,16 @@
       <h1 class="site-title" data-i18n="hero_title">CommandBlock</h1>
     </div>
 
+    <button class="hamburger" id="hamburger-btn" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
     <nav class="header-nav">
       <a href="https://ssmg4.github.io/CommandBlock" data-i18n="nav_home">Home</a>
       <div class="dropdown">
         <button class="dropbtn" aria-expanded="false">
           <span data-i18n="nav_more">More</span>
-          <span class="arrow-icon" aria-hidden="true"></span>
+          <span class="arrow-icon" aria-hidden="true">&#9660;</span>
         </button>
         <div class="dropdown-content">
           <a href="logo-history.html" data-i18n="nav_logo">Logo History</a>
@@ -69,6 +73,29 @@
       </p>
       <a href="#features" class="hero-cta" data-i18n="hero_cta">Explore</a>
     </section>
+
+    <!-- Stats strip -->
+    <div class="info-strip">
+      <div class="info-item">
+        <span class="info-num">20+</span>
+        <span class="info-label" data-i18n="stats_editions">Editions tracked</span>
+      </div>
+      <div class="info-item">
+        <span class="info-num">800+</span>
+        <span class="info-label" data-i18n="stats_versions">Java versions</span>
+      </div>
+      <div class="info-item">
+        <span class="info-num">15+</span>
+        <span class="info-label" data-i18n="stats_years">Years of history</span>
+      </div>
+    </div>
+
+    <!-- About blurb -->
+    <div class="about-strip" style="margin: 2.5em auto 0; padding: 1.8em 2em;">
+      <h2 data-i18n="about_strip_heading">What is CommandBlock?</h2>
+      <p data-i18n="about_strip_p1">CommandBlock is a fan-made, open-source library dedicated to preserving and presenting everything about Minecraft. From the earliest Pre-Classic builds to the latest releases, from obscure handheld editions to deep modding guides, this site covers it all.</p>
+      <p data-i18n="about_strip_p2">Built with pure HTML, CSS, and JavaScript, CommandBlock is lightweight, portable, and always accessible. No ads, no tracking, just information.</p>
+    </div>
 
     <!-- Feature Cards -->
     <section class="features-section" id="features">
@@ -131,7 +158,7 @@
   <!-- ===== FOOTER ===== -->
   <footer>
     <p>&copy; <span data-i18n="footer_copy">2026 CommandBlock | Unofficial Fan Project</span></p>
-    <p data-i18n="footer_disclaimer">This project is not affiliated with Mojang Studios or Microsoft.</p>
+    <p data-i18n="footer_disclaimer">Not affiliated with Mojang Studios or Microsoft.</p>
   </footer>
 
   <script src="scripts/main.js"></script>
@@ -141,17 +168,9 @@
       if (cta) {
         cta.addEventListener('click', function(e) {
           var target = document.querySelector('#features');
-          if (target) {
-            e.preventDefault();
-            target.scrollIntoView({ behavior: 'smooth' });
-          }
+          if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
         });
       }
-      setTimeout(function() {
-        var heroLogo = document.getElementById('hero-logo');
-        var mainLogo = document.getElementById('logo');
-        if (heroLogo && mainLogo) heroLogo.src = mainLogo.src;
-      }, 10);
     });
   </script>
 </body>
