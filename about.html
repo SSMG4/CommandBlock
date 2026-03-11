@@ -17,12 +17,16 @@
       <h1 class="site-title" data-i18n="hero_title">CommandBlock</h1>
     </div>
 
+    <button class="hamburger" id="hamburger-btn" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
     <nav class="header-nav">
       <a href="https://ssmg4.github.io/CommandBlock" data-i18n="nav_home">Home</a>
       <div class="dropdown">
         <button class="dropbtn" aria-expanded="false">
           <span data-i18n="nav_more">More</span>
-          <span class="arrow-icon" aria-hidden="true"></span>
+          <span class="arrow-icon" aria-hidden="true">&#9660;</span>
         </button>
         <div class="dropdown-content">
           <a href="logo-history.html" data-i18n="nav_logo">Logo History</a>
@@ -61,9 +65,7 @@
     <section>
       <h2 data-i18n="about_heading">About CommandBlock</h2>
       <p data-i18n="about_p">
-        CommandBlock is a fan-created, all-in-one library about Minecraft,
-        covering everything from version histories to modding and community projects.
-        This site is for fans, by fans, with no affiliation with Mojang or Microsoft.
+        CommandBlock is a fan-created, all-in-one library about Minecraft, covering everything from version histories to modding and community projects. This site is for fans, by fans, with no affiliation with Mojang or Microsoft.
       </p>
     </section>
 
@@ -84,6 +86,16 @@
         <li><span data-i18n="about_opensource">Open source!</span> <a href="https://github.com/SSMG4/CommandBlock">GitHub Repository</a></li>
         <li>See <a href="mods.html" data-i18n="nav_mods">Mods</a>, <a href="modding.html" data-i18n="nav_modding">Modding</a>, <a href="logo-history.html" data-i18n="nav_logo">Logo History</a>, and more!</li>
       </ul>
+    </section>
+
+    <section>
+      <h3 data-i18n="about_contribute_h">Contributing</h3>
+      <p data-i18n="about_contribute_p">CommandBlock is open to contributions. Open an issue for corrections or suggestions, or submit a pull request for new pages, data, or improvements. Help with translations and version history research is especially welcome.</p>
+    </section>
+
+    <section>
+      <h3 data-i18n="about_license_h">License</h3>
+      <p data-i18n="about_license_p">CommandBlock is released under the MIT License. You are free to reuse, fork, and expand this project for your own Minecraft resources.</p>
     </section>
 
     <section>
@@ -114,7 +126,7 @@
   <!-- ===== FOOTER ===== -->
   <footer>
     <p>&copy; <span data-i18n="footer_copy">2026 CommandBlock | Unofficial Fan Project</span></p>
-    <p data-i18n="footer_disclaimer">This project is not affiliated with Mojang Studios or Microsoft.</p>
+    <p data-i18n="footer_disclaimer">Not affiliated with Mojang Studios or Microsoft.</p>
   </footer>
 
   <script src="scripts/main.js"></script>
